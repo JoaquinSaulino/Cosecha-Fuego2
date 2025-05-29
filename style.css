@@ -1,0 +1,555 @@
+/* Hero */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/* font-family: "Amatic SC", sans-serif; */
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Pie de Reset */
+
+html {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header */
+
+header img {
+    width: 9.375rem;
+}
+
+
+/* NAV CON BOOTSTRAP */
+
+.navbar-brand {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.container-fluid img {
+    height: 10rem;
+}
+
+/* PIE DE NAV CON BOOTSTRAP */
+
+/* Main */
+
+.mainweb {
+    position: relative;
+    z-index: 0;
+    margin-top: 4.6875rem;
+}
+
+.fade-in-fwd{-webkit-animation:fade-in-fwd .8s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-fwd .8s cubic-bezier(.39,.575,.565,1.000) both}
+
+h2{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: black;
+    padding: .3125rem;
+    margin: .625rem;
+    font-weight: 700;
+    font-family: "Amatic SC", sans-serif;
+}
+
+h4{
+    font-size: 2.5rem;
+    color: black;
+    padding: 5px;
+    margin: .625rem;
+    background-color: #8F8F8F;
+    font-weight: 700;
+    font-family: "Amatic SC", sans-serif;
+    box-shadow: .375rem .375rem .375rem -0.1875rem rgba(0,0,0,0.94);
+    border-radius: .625rem;
+    border: .1875rem solid black;
+}
+
+
+h5{
+    text-align: center;
+    font-size: 3.125rem;
+    color: black;
+    margin: .625rem;
+    padding: .625rem;
+    font-family: "Amatic SC", sans-serif;
+}
+
+.textoiniciopages {
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+}
+
+
+p{
+    color: black;
+    font-size: 2.5rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-image: url(./medios/home-page.png);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.body-mate{
+    background-image: url(./medios/mate-page.png);
+}
+
+.body-cafe{
+    background-image: url(./medios/cafe-page.png);
+}
+
+.body-vino{
+    background-image: url(./medios/vino-page.png);
+}
+
+.body-accesorio{
+    background-image: url(./medios/home-page.png);
+}
+
+.textoinicio {
+    background-image: url(./medios/home-paisaje.png);
+    background-size: cover;
+    padding: 25rem;
+}
+
+.textohome{
+    text-align: center;
+    margin: 1.875rem;
+    padding: 1.875rem;
+    border: .1875rem solid black;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.692);
+}
+
+.tituloshome {
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    margin: .625rem;
+    padding: .625rem;
+}
+/* CAJA VENTAS */
+
+.boxventa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+}
+
+.boxventagrid {
+    padding: 0.5rem;
+} 
+
+.cajaventa {
+    font-size: 1.875rem;
+    margin: .9375rem;
+    padding: .625rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaventa img {
+    width: auto;
+    height: 18.75rem;
+    border-radius: 1.25rem;
+}
+
+
+.textocajaventa {
+    font-size: 1.1875rem;
+    color: black;
+    padding: .3125rem;
+    margin: .625rem;
+    font-weight: 700;
+    font-family: "Amatic SC", sans-serif;
+}
+
+/* Bootstrap en Carrusel Pages */
+
+.carousel-inner{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+    width: 70%;
+}
+
+/* Animacion de Box Venta */
+
+button {
+/* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+/* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+/* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+
+/* Seccion uno */
+
+.quienessomosflex {
+    font-size: 1.875rem;
+    margin: .9375rem;
+}
+
+.quienessomos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .625rem;
+}
+
+.quienessomos img {
+    width: 30%;
+}
+
+/* Session dos */
+
+.queproductosflex {
+    font-size: 1.875rem;
+    margin: .9375rem;
+}
+
+.queproductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .625rem;
+}
+
+.queproductos img {
+    width: 25%;
+}
+/* Session tres */
+
+.nuestrosproductosflex {
+    font-size: 1.875rem;
+    margin: .9375rem;
+}
+
+.nuestrosproductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .625rem;
+}
+
+.nuestrosproductos img {
+    width: 30%;
+}
+
+/* Bootstrap Presupuestos */
+
+.presupuestos {
+    border: .1875rem solid black;
+    border-radius: 1.25rem;
+    font-size: 1.875rem;
+    margin: .9375rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.692);
+    display: grid;
+    gap: .9375rem;
+    font-family: "Amatic SC", sans-serif;
+}
+
+.row {
+    font-size: 1.875rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bolder;
+    margin: .1875rem;
+    padding: .1875rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    background-color: #8F8F8F;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1F1F1F;
+}
+
+footer img {
+    width: 6.25rem;
+    margin: .9375rem;
+    padding: .9375rem;
+}
+
+.footerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerlogo img {
+    width: 9.375rem;
+}
+
+@-webkit-keyframes fade-in-fwd{0%{-webkit-transform:translateZ(-80px);transform:translateZ(-80px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes fade-in-fwd{0%{-webkit-transform:translateZ(-80px);transform:translateZ(-80px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+
+/* RESPONSIVE */
+
+/* MOBILE */
+
+/* @media (max-width: 480px){
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .body-mate{
+        width: auto;
+    }
+    .navbar {
+        width: auto;
+    }
+
+    .mainweb{
+        width: 100%;
+    }
+    
+    .textoinicio{
+        width: auto;
+        margin: 0;
+        background-image: url(../thelast-proyect-coder/medios/textoinicio.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    h2{
+        font-size: 1.5625rem;
+    }
+
+    .textoiniciopages {
+        font-size: 1.25rem ;
+        width: 100%;
+    }
+
+    .quienessomos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footerflex{
+        width: 100%;
+    } */
+
+/* Seccion uno - Home */
+
+    /*.quienessomosflex{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 95vh;
+    }
+
+    .quienessomos{
+        flex-direction: column;
+    }
+
+    .quienessomos img {
+        display: none
+    }*/
+
+/* Session dos - Home */
+
+    /*.queproductosflex {
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 95vh;
+    }
+
+    .queproductos{
+        flex-direction: column;
+    }
+
+    .queproductos img {
+        display: none
+    }*/
+
+
+/* Session tres - Home */
+
+    /*.nuestrosproductosflex{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 95vh;
+    }
+
+    .nuestrosproductos{
+        flex-direction: column;
+    }
+
+    .nuestrosproductos img {
+        display: none
+    }*/
+
+/* PRODUCTOS DE BOX-VENTA */
+
+    /*.boxventa {
+        display: flex;
+        flex-direction: column;
+        width: 95vh;
+    }
+
+    .presupuestos {
+        width: 95vh;
+    }
+
+    .mediocontacto {
+        display: flex;
+        flex-direction: column;
+    }*/
+
+/* FOOTER */
+
+    /*.footerflex {
+        width: 100vh;
+    }
+
+
+
+
+}*/
+
+
+
+
+
+/* TABLET */
+/*@media (min-width: 481px) and (max-width:769px) {
+
+} */
+
+/* MEDIA QUERIE CON IA */
+
+@media (max-width: 480px) {
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .textoinicio{
+        width: 10vw;
+    }
+
+  /* Ajustar el padding y márgenes para pantallas pequeñas */
+    body {
+        padding: 0.625rem;
+    }
+
+  /* Hacer que la navbar ocupe toda la pantalla en modo móvil */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+  /* Mostrar la imagen del logo en tamaño ajustado */
+    .offcanvas-header img {
+        width: 80px;
+    }
+
+  /* Reducir tamaño de títulos */
+    .tituloshome {
+        font-size: 1.2em;
+    }
+
+  /* Ajustar ancho y disposición de las secciones */
+    .quienessomosflex,
+    .queproductosflex,
+    .nuestrosproductosflex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+  /* Asegurar que las imágenes no sean demasiado grandes */
+    .quienessomos img,
+    .queproductos img,
+    .nuestrosproductos img {
+        width: 100vh;
+        height: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+  /* Opcional: ajustar tamaño del texto de los párrafos */
+    .textohome p {
+        font-size: 0.9em;
+    }
+
+    .footerflex{
+        width: 100vh;
+        height: 50vw;
+    }
+}
