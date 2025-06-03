@@ -237,6 +237,16 @@ button:active .button_top {
     transform: translateY(0);
 }
 
+/* Hover */
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
 
 /* Seccion uno */
 
@@ -349,207 +359,92 @@ footer img {
 
 /* RESPONSIVE */
 
-/* MOBILE */
+/* TABLET */
+@media (min-width: 481px) and (max-width:769px) {} 
 
-/* @media (max-width: 480px){
-    
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* MOVIL */
+
+@media (max-width: 480px) {
+    /* Ajustes generales */
+    .body {
+        background-image: url(./medios/home-page.png);
+        background-size: contain;
+        overflow-x: hidden;
+        font-size: 16px;
+        width: 10vmax;
     }
 
-    .body-mate{
-        width: auto;
-    }
+    /* Header */
+
     .navbar {
-        width: auto;
+        width: 80vmax;
     }
 
-    .mainweb{
-        width: 100%;
+    .header img {
+        width: 6rem; /* ajusta el tamaño de la imagen del header */
     }
-    
+
     .textoinicio{
-        width: auto;
-        margin: 0;
-        background-image: url(../thelast-proyect-coder/medios/textoinicio.png);
-        background-size: cover;
-        background-position: center;
+        background-image: none;
     }
 
-    h2{
-        font-size: 1.5625rem;
+    /* NAV CON BOOTSTRAP */
+    .navbar-brand {
+        font-size: 1.8rem; /* ajusta el tamaño de la fuente del navbar */
     }
 
-    .textoiniciopages {
-        font-size: 1.25rem ;
-        width: 100%;
+    /* Main */
+    .mainweb {
+        margin-top: 2rem; /* ajusta el margen superior del main */
     }
 
-    .quienessomos{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    /* Caja de ventas */
+    .boxventa {
+        grid-template-columns: 1fr 1fr; /* ajusta la cantidad de columnas en la grilla */
     }
 
-    .footerflex{
-        width: 100%;
-    } */
-
-/* Seccion uno - Home */
-
-    /*.quienessomosflex{
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        width: 95vh;
+    /* Imágenes en la caja de ventas */
+    .cajaventa img {
+        height: 12rem; /* ajusta el tamaño de las imágenes */
     }
 
-    .quienessomos{
-        flex-direction: column;
+    /* Textos en la caja de ventas */
+    .textocajaventa {
+        font-size: 1rem; /* ajusta el tamaño de la fuente */
+    }
+
+    /* Quienes somos */
+    .quienessomos {
+        flex-direction: column; /* cambia la dirección de la flexbox a columna */
     }
 
     .quienessomos img {
-        display: none
-    }*/
-
-/* Session dos - Home */
-
-    /*.queproductosflex {
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        width: 95vh;
+        width: 50%; /* ajusta el tamaño de la imagen */
     }
 
-    .queproductos{
-        flex-direction: column;
+    .queproductos {
+        /*flex-direction: column;*/
+        flex-direction: column-reverse;
     }
 
     .queproductos img {
-        display: none
-    }*/
-
-
-/* Session tres - Home */
-
-    /*.nuestrosproductosflex{
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        width: 95vh;
+        width: 50%;
     }
 
-    .nuestrosproductos{
+    .nuestrosproductos {
         flex-direction: column;
     }
 
     .nuestrosproductos img {
-        display: none
-    }*/
-
-/* PRODUCTOS DE BOX-VENTA */
-
-    /*.boxventa {
-        display: flex;
-        flex-direction: column;
-        width: 95vh;
+        width: 50%;
     }
 
-    .presupuestos {
-        width: 95vh;
+    /* Footer */
+    .footerflex {
+        flex-direction: column; /* cambia la dirección de la flexbox a columna */
     }
 
-    .mediocontacto {
-        display: flex;
-        flex-direction: column;
-    }*/
-
-/* FOOTER */
-
-    /*.footerflex {
-        width: 100vh;
-    }
-
-
-
-
-}*/
-
-
-
-
-
-/* TABLET */
-/*@media (min-width: 481px) and (max-width:769px) {
-
-} */
-
-/* MEDIA QUERIE CON IA */
-
-@media (max-width: 480px) {
-
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
-    .textoinicio{
-        width: 10vw;
-    }
-
-  /* Ajustar el padding y márgenes para pantallas pequeñas */
-    body {
-        padding: 0.625rem;
-    }
-
-  /* Hacer que la navbar ocupe toda la pantalla en modo móvil */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-  /* Mostrar la imagen del logo en tamaño ajustado */
-    .offcanvas-header img {
-        width: 80px;
-    }
-
-  /* Reducir tamaño de títulos */
-    .tituloshome {
-        font-size: 1.2em;
-    }
-
-  /* Ajustar ancho y disposición de las secciones */
-    .quienessomosflex,
-    .queproductosflex,
-    .nuestrosproductosflex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-  /* Asegurar que las imágenes no sean demasiado grandes */
-    .quienessomos img,
-    .queproductos img,
-    .nuestrosproductos img {
-        width: 100vh;
-        height: 50vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-  /* Opcional: ajustar tamaño del texto de los párrafos */
-    .textohome p {
-        font-size: 0.9em;
-    }
-
-    .footerflex{
-        width: 100vh;
-        height: 50vw;
+    .footer img {
+        width: 4rem; /* ajusta el tamaño de las imágenes del footer */
     }
 }
